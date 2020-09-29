@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<font-family xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!-- This XML is use to declare one type custom font
+
+         So
+         Can use fontfamily="@font/font_name"
+        -->
+
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/timeburner_normal"
+        app:fontStyle="normal"
+        app:fontWeight="400"
+        app:font="@font/timeburner_normal"
+        /><!--fontstyle can use to declare the custom font style
+             So When i use textstyle="normal" it will use @font/timeburner_normal-->
+
+
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="700"
+        android:font="@font/timeburner_bold"
+        app:fontStyle="normal"
+        app:fontWeight="700"
+        app:font="@font/timeburner_bold"
+        /><!--If put 700 = declare bold
+             So When i use textstyle="bold" == using fontweight 700-->
+</font-family>

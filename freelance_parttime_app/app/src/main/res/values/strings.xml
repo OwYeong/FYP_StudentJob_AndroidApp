@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">freelance_parttime_app</string>
+    <string name="app">StudentHelper</string>
+    <string name="app_slogan">Platform for Student to find Jobs</string>
+    <string name="greeting">Welcome to Student Helper</string>
+
+</resources>

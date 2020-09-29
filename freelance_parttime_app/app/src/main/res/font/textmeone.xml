@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<font-family xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!-- This XML is use to declare one type custom font
+
+         So
+         Can use fontfamily="@font/font_name"
+        -->
+
+    <!-- attribute set twice?
+        android:  .... (set for API 26++)
+        app:  .... (set for API 16++)
+     -->
+
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/textmeone_regular"
+        app:fontStyle="normal"
+        app:fontWeight="400"
+        app:font="@font/textmeone_regular"
+        />
+
+</font-family>
