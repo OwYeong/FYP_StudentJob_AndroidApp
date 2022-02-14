@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="20dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:layout_marginBottom="30dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/layout_student_offer_pending_container_linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Post Request Send"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="@font/textmeone"
+                android:textSize="25sp"
+                android:textStyle="normal"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:id="@+id/layout_student_offer_pending_jobType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/textmeone"
+                    android:textStyle="normal"
+                    android:textSize="23sp"
+                    android:textColor="@color/textColorHighContrast"
+                    android:text="Freelance / Parttime Job"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:id="@+id/layout_student_offer_pending_offers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/textmeone"
+                    android:textStyle="normal"
+                    android:textSize="23sp"
+                    android:textColor="@color/textColorHighContrast"
+                    android:text="Budget: "
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+                <TextView
+                    android:id="@+id/layout_student_offer_pending_postTitle"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/textmeone"
+                    android:textStyle="normal"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginTop="5dp"
+                    android:textSize="20sp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:text="The Post Title is written here"/>
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/layout_student_offer_pending_status"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="@font/montserrat"
+                android:textStyle="normal"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="Status: Pending For Employer Reply"
+                android:background="@drawable/cyan_rounded_square_btn"/>
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/layout_student_offer_pending_button_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="11">
+
+
+                <Button
+                    android:id="@+id/layout_student_offer_pending_cancel_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="5"
+                    android:text="Cancel Request"
+                    android:textColor="@color/colorPrimary"
+                    android:fontFamily="@font/montserrat"
+                    android:textSize="13sp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/rounded_square_btn"/>
+
+                <Button
+                    android:id="@+id/layout_student_offer_pending_checkMyRequest_btn"
+                    android:layout_width="0dp"
+                    android:layout_weight="6"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="Check Info"
+                    android:textColor="@color/colorPrimary"
+                    android:fontFamily="@font/montserrat"
+                    android:layout_alignParentRight="true"
+                    android:textSize="13sp"
+
+                    android:background="@drawable/rounded_square_btn"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

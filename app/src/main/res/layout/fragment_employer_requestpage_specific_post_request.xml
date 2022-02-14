@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <ScrollView
+        android:id="@+id/fragment_employer_requestpage_specific_post_request_scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+                <LinearLayout
+                    android:id="@+id/fragment_employer_requestpage_specific_post_request_headerContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/fragment_employer_requestpage_specific_post_request_jobType"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/textmeone"
+                            android:textStyle="bold"
+                            android:textSize="23sp"
+                            android:textColor="@color/textColorHighContrast"
+                            android:text="Freelance / Parttime Job"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"/>
+
+                        <TextView
+                            android:id="@+id/fragment_employer_requestpage_specific_post_request_offers"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/textmeone"
+                            android:textStyle="normal"
+                            android:textSize="23sp"
+                            android:textColor="@color/textColorHighContrast"
+                            android:text="Budget: "
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"/>
+
+
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:id="@+id/fragment_employer_requestpage_specific_post_request_postTitle"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/textmeone"
+                        android:textStyle="normal"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_marginTop="10dp"
+                        android:textSize="20sp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:text="The Post Title is written here"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/custom_btm_line"
+                        android:background="@android:color/transparent"
+                        android:scaleType="centerInside"/>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/fragment_employer_requestpage_specific_post_request_headerContainer">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/fragment_employer_requestpage_specific_post_request_recyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    </android.support.v7.widget.RecyclerView>
+
+                </RelativeLayout>
+
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/fragment_employer_requestpage_specific_post_request_selectDateTime_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="20dp"
+                android:background="#99111111"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/dark_purple_rounded_rectangle_bg">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/textmeone"
+                        android:textSize="16sp"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="normal"
+                        android:text="Please Select a Prefered Timetable For An Interview With The Student"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="20dp"
+                        android:layout_gravity="center"
+                        android:weightSum="10">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/fragment_employer_requestpage_specific_post_request_selectDateTime_container_calendarIcon"
+                                android:layout_width="70dp"
+                                android:layout_height="80dp"
+                                android:src="@drawable/calendar_icon"/>
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:orientation="vertical"
+                            android:layout_weight="7">
+
+                            <TextView
+                                android:id="@+id/fragment_employer_requestpage_specific_post_request_selectDateTime_container_date"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:fontFamily="@font/montserrat"
+                                android:paddingLeft="20dp"
+                                android:gravity="center_vertical"
+
+                                android:text=""
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="20sp"
+                                android:background="@drawable/light_purple_custom_edit_text_bg"/>
+
+                            <TextView
+                                android:id="@+id/fragment_employer_requestpage_specific_post_request_selectDateTime_container_date_alert"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/montserrat"
+                                android:text="asdasdasdasdasdas"
+                                android:textColor="#ff7676"
+                                android:textSize="13sp"
+                                android:textStyle="normal"
+                                android:layout_marginLeft="5dp"
+                                android:visibility="visible" />
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="10dp"
+                                android:weightSum="10">
+
+                                <Spinner
+                                    android:id="@+id/fragment_employer_requestpage_specific_post_request_selectDateTime_container_time"
+                                    android:layout_width="0dp"
+                                    android:layout_height="40dp"
+                                    android:layout_weight="5"
+                                    android:layout_marginRight="5dp"
+                                    android:background="@drawable/light_purple_custom_spinner_background">
+
+                                </Spinner>
+
+                                <Spinner
+                                    android:id="@+id/fragment_employer_requestpage_specific_post_request_selectDateTime_container_timeFormat"
+                                    android:layout_width="0dp"
+                                    android:layout_height="40dp"
+                                    android:layout_weight="5"
+                                    android:layout_marginLeft="5dp"
+                                    android:background="@drawable/light_purple_custom_spinner_background">
+
+                                </Spinner>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/textmeone"
+                            android:textSize="20sp"
+                            android:textColor="@color/colorPrimary"
+                            android:textStyle="normal"
+                            android:text="Interview Location"/>
+
+                        <EditText
+                            android:id="@+id/fragment_employer_requestpage_specific_post_request_selectDateTime_container_interviewLocation"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/light_purple_custom_edit_text_bg"
+                            android:fontFamily="@font/montserrat"
+                            android:textAlignment="textStart"
+                            android:inputType="textPostalAddress|textMultiLine"
+                            android:lineSpacingExtra="4sp"
+                            android:overScrollMode="always"
+                            android:scrollbarStyle="insideInset"
+                            android:scrollbars="vertical"
+                            android:gravity="start"
+                            android:padding="10dp"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="15sp"/>
+                        <TextView
+                            android:id="@+id/fragment_employer_requestpage_specific_post_request_selectDateTime_container_interviewLocation_alert"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat"
+                            android:text="asdasdasdasdasdas"
+                            android:textColor="#ff7676"
+                            android:textSize="13sp"
+                            android:textStyle="normal"
+                            android:layout_marginLeft="5dp"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/textmeone"
+                            android:layout_marginTop="20dp"
+                            android:textSize="20sp"
+                            android:textColor="@color/colorPrimary"
+                            android:textStyle="normal"
+                            android:text="Leave A Message"/>
+
+                        <EditText
+                            android:id="@+id/fragment_employer_requestpage_specific_post_request_selectDateTime_container_leaveAMessage"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/light_purple_custom_edit_text_bg"
+                            android:fontFamily="@font/montserrat"
+                            android:textAlignment="textStart"
+                            android:inputType="textPostalAddress|textMultiLine"
+                            android:lineSpacingExtra="4sp"
+                            android:overScrollMode="always"
+                            android:scrollbarStyle="insideInset"
+                            android:scrollbars="vertical"
+                            android:gravity="start"
+                            android:padding="10dp"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="15sp"/>
+
+                        <TextView
+                            android:id="@+id/fragment_employer_requestpage_specific_post_request_selectDateTime_container_leaveAMessage_alert"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat"
+                            android:text="asdasdasdasdasdas"
+                            android:textColor="#ff7676"
+                            android:textSize="13sp"
+                            android:textStyle="normal"
+                            android:layout_marginLeft="5dp"
+                            android:visibility="visible" />
+
+                    </LinearLayout>
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:orientation="horizontal"
+                        android:layout_weight="10">
+                        <Button
+                            android:id="@+id/fragment_employer_requestpage_specific_post_request_selectDateTime_container_sentInterviewRequest_btn"
+                            android:layout_width="150dp"
+                            android:layout_height="50dp"
+                            android:fontFamily="@font/montserrat"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="12sp"
+                            android:layout_alignParentLeft="true"
+                            android:text="Sent Request"
+                            android:background="@drawable/rounded_square_btn"/>
+
+                        <Button
+                            android:id="@+id/fragment_employer_requestpage_specific_post_request_selectDateTime_container_cancel_btn"
+                            android:layout_width="150dp"
+                            android:layout_height="50dp"
+                            android:fontFamily="@font/montserrat"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="12sp"
+                            android:text="Cancel"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/rounded_square_btn"/>
+
+                    </RelativeLayout>
+
+
+
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+    
+
+</RelativeLayout>

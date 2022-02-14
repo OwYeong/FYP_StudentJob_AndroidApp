@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30dp">
+    <RelativeLayout
+        android:id="@+id/layout_employer_specific_post_request_headerContainer"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <FrameLayout android:id="@+id/layout_employer_specific_post_request_headerContainer_profilePicContainer"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentLeft="true">
+
+            <ImageView
+                android:id="@+id/layout_employer_specific_post_request_headerContainer_profilePic"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center"
+                android:scaleType="fitCenter"
+                android:src="@drawable/default_designer_profilepic" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/profile_circle_crop" />
+
+        </FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_toRightOf="@id/layout_employer_specific_post_request_headerContainer_profilePicContainer"
+            android:paddingLeft="20dp"
+            android:paddingTop="2dp">
+            <TextView
+                android:id="@+id/layout_employer_specific_post_request_headerContainer_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Employer User Name"
+                android:fontFamily="@font/textmeone"
+                android:textStyle="normal"
+                android:textSize="23sp"
+                android:textColor="@color/textColorPrimary" />
+            <TextView
+                android:id="@+id/layout_employer_specific_post_request_headerContainer_skillCat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Employer"
+                android:fontFamily="@font/textmeone"
+                android:textStyle="normal"
+                android:textSize="20sp"
+                android:textColor="@color/textColorContrast" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_employer_specific_post_request_contentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_employer_specific_post_request_headerContainer"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+            <TextView
+                android:id="@+id/layout_employer_specific_post_request_contentContainer_postedon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Requested on: "
+                android:fontFamily="@font/textmeone"
+                android:textSize="14sp"
+                android:layout_alignParentLeft="true"
+                android:textColor="@color/textColorPrimary"/>
+
+            <TextView
+                android:id="@+id/layout_employer_specific_post_request_contentContainer_requestedDateTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/layout_employer_specific_post_request_contentContainer_postedon"
+                android:layout_marginBottom="3dp"
+                android:fontFamily="@font/textmeone"
+                android:text="2019-4-20 23:30:30"
+                android:textColor="@color/textColorPrimary"
+                android:textSize="12sp"
+                android:textStyle="normal" />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Message"
+            android:fontFamily="@font/textmeone"
+            android:textStyle="normal"
+            android:textColor="@color/colorPrimary"
+            android:textSize="25sp"/>
+
+        <TextView
+            android:id="@+id/layout_employer_specific_post_request_contentContainer_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Student Message will be written here, as they apply the job"
+            android:textSize="16sp"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="@font/montserrat"
+            android:textStyle="normal"
+            android:layout_marginBottom="10dp"/>
+
+
+        <RelativeLayout
+            android:id="@+id/layout_employer_specific_post_request_button_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            
+            <Button
+                android:id="@+id/layout_employer_specific_post_request_accept_btn"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:text="Accept"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="@font/montserrat"
+                android:textSize="15sp"
+                android:background="@drawable/rounded_square_btn"/>
+
+            <Button
+                android:id="@+id/layout_employer_specific_post_request_decline_btn"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:text="Decline"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="@font/montserrat"
+                android:layout_toRightOf="@id/layout_employer_specific_post_request_accept_btn"
+                android:textSize="15sp"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/rounded_square_btn"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_employer_specific_post_request_interviewRequest_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="InterView Request Sent. Pending For Reply"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="@font/montserrat"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:background="@drawable/rounded_square_btn"/>
+
+            <Button
+                android:id="@+id/layout_employer_specific_post_request_reviseTimetable_btn"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:text="Revise Interview Timetable"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="@font/montserrat"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_square_btn"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_employer_specific_post_request_accepted_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Accepted"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="@font/montserrat"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:background="@drawable/green_rounded_square_btn"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_employer_specific_post_request_rejected_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Rejected"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="@font/montserrat"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:background="@drawable/red_rounded_square_btn"/>
+
+        </RelativeLayout>
+        
+    </LinearLayout>
+
+</RelativeLayout>

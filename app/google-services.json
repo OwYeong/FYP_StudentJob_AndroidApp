@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1008269382061",
+    "firebase_url": "https://fyp-studentjobpushnotification.firebaseio.com",
+    "project_id": "fyp-studentjobpushnotification",
+    "storage_bucket": "fyp-studentjobpushnotification.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1008269382061:android:80030417bee16c11",
+        "android_client_info": {
+          "package_name": "com.oybx.fyp_application"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1008269382061-4rh3qb3q1bmlgirah9gfr9emvbs2uhc3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsMovTtG53QTHUiaB7eT4R5apbkMDyCW8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1008269382061-4rh3qb3q1bmlgirah9gfr9emvbs2uhc3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

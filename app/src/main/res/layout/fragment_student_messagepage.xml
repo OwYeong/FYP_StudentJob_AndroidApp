@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#353B59"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:id="@+id/fragment_student_messagepage_noMessageSection"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_marginTop="120dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="220dp"
+                android:layout_height="150dp"
+                android:src="@drawable/message_icon"
+                android:background="@android:color/transparent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/textmeone"
+                android:text="You Have No Chat Message at This \nMoment. Message will appear after u had chat"
+                android:textSize="18sp"
+                android:textColor="#4479C6"
+                android:textAlignment="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="150dp"
+                android:textStyle="normal"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/fragment_search_messagepage_searchbar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Search"
+            android:textColorHint="#89A9EF"
+            android:layout_marginTop="20dp"
+            android:padding="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:inputType="text|textNoSuggestions"
+            android:background="@drawable/rounded_rectangle_searchbar_bg"
+            android:textColor="@color/colorPrimary"
+            android:drawableLeft="@drawable/search_icon_xml"
+            android:drawablePadding="20dp"
+            />
+
+        <RelativeLayout
+            android:id="@+id/fragment_std_messagepage_relativelayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/fragment_std_messagepage_chatRoom_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/fragment_std_messagepage_searchList_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#99111111">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

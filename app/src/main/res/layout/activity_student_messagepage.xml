@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/std_messagepage_drawer_layout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".employer_section.EmployerMessagepage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#353B59">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:id="@+id/std_messagepage_topNavi_container">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+
+                android:gravity="center"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+                <ImageButton
+                    android:id="@+id/std_messagepage_menu_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/top_navi_menu_icon"
+                    android:background="@android:color/transparent"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/timeburner"
+                    android:textSize="25sp"
+                    android:gravity="center"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/colorPrimary"
+                    android:text="MessagePage"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp">
+                <ImageButton
+                    android:id="@+id/std_messagepage_home_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/top_navi_home_icon"
+                    android:background="@android:color/transparent"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+
+
+        <FrameLayout
+            android:id="@+id/std_messagepage_framelayout_fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/std_messagepage_topNavi_container"
+            android:layout_above="@id/std_messagepage_btmNavi_container">
+
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/std_messagepage_btmNavi_container">
+            <android.support.design.widget.BottomNavigationView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/std_messagepage_btmNavi_bar"
+                app:itemTextColor="@color/colorPrimary"
+                app:itemTextAppearanceActive="@style/BottomNaviTextStyle"
+                app:itemTextAppearanceInactive="@style/BottomNaviTextStyle"
+                app:menu="@menu/btm_navi_menu"
+                app:labelVisibilityMode="labeled">
+
+            </android.support.design.widget.BottomNavigationView>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/std_messagepage_loadingPanel"
+        style="@style/GenericProgressBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ProgressBar
+            style="@style/GenericProgressIndicator"/>
+    </RelativeLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/std_messagepage_navi_drawer"
+        app:headerLayout="@layout/custom_navi_drawer_header"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/navigation_drawer_background"
+        android:layout_gravity="start"
+        app:itemTextColor="@color/white"
+        app:itemTextAppearance="@font/montserrat"
+        app:menu="@menu/navigation_drawer_menu">
+
+
+    </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>

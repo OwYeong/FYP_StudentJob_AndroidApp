@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/fragment_employer_profilepage_editProfilepage_scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:fillViewport="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/fragment_employer_profilepage_editProfilepage_profileHeaderContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <LinearLayout
+                    android:id="@+id/fragment_employer_profilepage_editProfilepage_profilePicContainer"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="150dp"
+                        android:layout_height="150dp">
+
+
+                        <ImageView
+                            android:id="@+id/fragment_employer_profilepage_editProfilepage_profilePicContainer_profilePic"
+                            android:layout_width="143dp"
+                            android:layout_height="143dp"
+                            android:adjustViewBounds="true"
+                            android:layout_gravity="center"
+                            android:scaleType="fitCenter" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/profile_circle_crop" />
+
+                    </FrameLayout>
+
+
+                    <Button
+                        android:id="@+id/fragment_employer_profilepage_editprofilepage_uploadProPic_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="23dp"
+                        android:text="Upload A Photo"
+                        android:fontFamily="@font/textmeone"
+                        android:textSize="16sp"
+                        android:textColor="@color/colorPrimary"
+                        android:background="@drawable/rounded_rectangle_btn_without_stroke"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@id/fragment_employer_profilepage_editProfilepage_profilePicContainer"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical"
+                    android:paddingLeft="30dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="First Name"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="normal"
+                        android:paddingLeft="5dp"
+                        android:fontFamily="@font/textmeone"
+                        android:textSize="15sp"/>
+
+                    <EditText
+                        android:id="@+id/fragment_employer_profilepage_editProfilepage_Fname_editText"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text=""
+                        android:hint="Enter Your First Name"
+                        android:textColorHint="@color/text_hint_color"
+                        android:textColor="@color/colorPrimary"
+                        android:fontFamily="@font/montserrat"
+                        android:textSize="15sp"
+                        android:background="@drawable/custom_edittext"/>
+                    <TextView
+                        android:id="@+id/fragment_employer_profilepage_editProfilepage_fName_alert"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat"
+                        android:text="asdasdasdasdasdas"
+                        android:textColor="#ff7676"
+                        android:textSize="13sp"
+                        android:textStyle="normal"
+
+                        android:visibility="visible" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Last Name"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="normal"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/textmeone"
+                        android:textSize="15sp"/>
+                    <EditText
+                        android:id="@+id/fragment_employer_profilepage_editProfilepage_Lname_editText"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text=""
+                        android:hint="Enter Your Last Name"
+                        android:textColorHint="@color/text_hint_color"
+                        android:textColor="@color/colorPrimary"
+                        android:fontFamily="@font/montserrat"
+                        android:textSize="15sp"
+                        android:background="@drawable/custom_edittext"/>
+                    <TextView
+                        android:id="@+id/fragment_employer_profilepage_editProfilepage_lName_alert"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat"
+                        android:text="asdasdasdasdasdas"
+                        android:textColor="#ff7676"
+                        android:textSize="13sp"
+                        android:textStyle="normal"
+
+                        android:visibility="visible" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/fragment_employer_profilepage_editProfilepage_descContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible"
+                android:layout_below="@+id/fragment_employer_profilepage_editProfilepage_profileHeaderContainer">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/textmeone"
+                    android:text="About Me"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp" />
+
+
+                <EditText
+                    android:id="@+id/fragment_employer_profilepage_editProfilepage_aboutMe_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/custom_edittext"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890\n "
+                    android:fontFamily="@font/montserrat"
+                    android:hint="Enter Something About You"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColorHint="#1A1A87"
+                    android:gravity="top|left"
+                    android:inputType="textMultiLine"
+                    android:overScrollMode="always"
+                    android:padding="10dp"
+                    android:scrollbarStyle="insideInset"
+                    android:scrollbars="vertical"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15sp" />
+                <TextView
+                    android:id="@+id/fragment_employer_profilepage_editProfilepage_aboutMe_alert"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat"
+                    android:text="asdasdasdasdasdas"
+                    android:textColor="#ff7676"
+                    android:textSize="13sp"
+                    android:textStyle="normal"
+
+                    android:visibility="visible" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/fragment_employer_profilepage_editProfilepage_contactContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:layout_below="@id/fragment_employer_profilepage_editProfilepage_descContainer">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="0dp"
+                        android:fontFamily="@font/textmeone"
+                        android:text="Contact"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20sp"
+                        android:textStyle="normal" />
+
+
+
+
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3.5"
+                        android:layout_marginRight="5dp"
+                        android:text="Phone Number"
+                        android:paddingLeft="10dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/colorPrimary"
+                        android:fontFamily="@font/montserrat"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/fragment_employer_profilepage_editProfilepage_phoneNum_edittext"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="6.5"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text=""
+                        android:hint="Enter Phone Number"
+                        android:textColorHint="@color/text_hint_color"
+                        android:textColor="@color/colorPrimary"
+                        android:fontFamily="@font/montserrat"
+                        android:textSize="15sp"
+                        android:background="@drawable/custom_edittext"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="3dp"
+                    android:weightSum="10">
+
+                    <!--use a empty textview to make margin left <- 4/10 in this linear
+                    -->
+                    <TextView
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4" />
+
+
+                    <TextView
+                        android:id="@+id/fragment_employer_profilepage_editProfilepage_phoneNum_alert"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat"
+                        android:text="asdasdasdasdasdas"
+                        android:layout_weight="6"
+                        android:textColor="#ff7676"
+                        android:textSize="13sp"
+                        android:textStyle="normal"
+
+                        android:visibility="visible" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3.5"
+                        android:layout_marginRight="5dp"
+                        android:text="Email"
+                        android:paddingLeft="10dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/colorPrimary"
+                        android:fontFamily="@font/montserrat"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/fragment_employer_profilepage_editProfilepage_email_edittext"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="6.5"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text=""
+                        android:hint="Enter Email Address"
+                        android:textColorHint="@color/text_hint_color"
+                        android:textColor="@color/colorPrimary"
+                        android:fontFamily="@font/montserrat"
+                        android:textSize="15sp"
+                        android:background="@drawable/custom_edittext"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="3dp"
+                    android:weightSum="10">
+
+                    <!--use a empty textview to make margin left <- 4/10 in this linear -->
+                    <TextView
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4" />
+
+
+                    <TextView
+                        android:id="@+id/fragment_employer_profilepage_editProfilepage_email_alert"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat"
+                        android:text="asdasdasdasdasdas"
+                        android:layout_weight="6"
+                        android:textColor="#ff7676"
+                        android:textSize="13sp"
+                        android:textStyle="normal"
+
+                        android:visibility="visible" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3.5"
+                        android:layout_marginRight="5dp"
+                        android:text="Whatsapp"
+                        android:paddingLeft="10dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/colorPrimary"
+                        android:fontFamily="@font/montserrat"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/fragment_employer_profilepage_editProfilepage_whatsapp_edittext"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="6.5"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text=""
+                        android:hint="Enter Your Whatsapp Url"
+                        android:textColorHint="@color/text_hint_color"
+                        android:textColor="@color/colorPrimary"
+                        android:fontFamily="@font/montserrat"
+                        android:textSize="15sp"
+                        android:background="@drawable/custom_edittext"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="3dp"
+                    android:weightSum="10">
+
+                    <!--use a empty textview to make margin left <- 4/10 in this linear -->
+                    <TextView
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4" />
+
+
+                    <TextView
+                        android:id="@+id/fragment_employer_profilepage_editProfilepage_whatsapp_alert"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat"
+                        android:text="asdasdasdasdasdas"
+                        android:layout_weight="6"
+                        android:textColor="#ff7676"
+                        android:textSize="13sp"
+                        android:textStyle="normal"
+
+                        android:visibility="visible" />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3.5"
+                        android:layout_marginRight="5dp"
+                        android:text="Facebook"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/colorPrimary"
+                        android:fontFamily="@font/montserrat"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/fragment_employer_profilepage_editProfilepage_facebook_edittext"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="6.5"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text=""
+                        android:hint="Enter Your Facebook Url"
+                        android:textColorHint="@color/text_hint_color"
+                        android:textColor="@color/colorPrimary"
+                        android:fontFamily="@font/montserrat"
+                        android:textSize="15sp"
+                        android:background="@drawable/custom_edittext"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="3dp"
+                    android:weightSum="10">
+
+                    <!--use a empty textview to make margin left <- 4/10 in this linear -->
+                    <TextView
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4" />
+
+
+                    <TextView
+                        android:id="@+id/fragment_employer_profilepage_editProfilepage_facebook_alert"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat"
+                        android:text="asdasdasdasdasdas"
+                        android:layout_weight="6"
+                        android:textColor="#ff7676"
+                        android:textSize="13sp"
+                        android:textStyle="normal"
+
+                        android:visibility="visible" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3.5"
+                        android:layout_marginRight="5dp"
+                        android:text="Twitter"
+                        android:paddingLeft="10dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/colorPrimary"
+                        android:fontFamily="@font/montserrat"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/fragment_employer_profilepage_editProfilepage_twitter_edittext"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="6.5"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text=""
+                        android:hint="Enter Your Twitter Url"
+                        android:textColorHint="@color/text_hint_color"
+                        android:textColor="@color/colorPrimary"
+                        android:fontFamily="@font/montserrat"
+                        android:textSize="15sp"
+                        android:background="@drawable/custom_edittext"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="3dp"
+                    android:weightSum="10">
+
+                    <!--use a empty textview to make margin left <- 4/10 in this linear -->
+                    <TextView
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4" />
+
+
+                    <TextView
+                        android:id="@+id/fragment_employer_profilepage_editProfilepage_twitter_alert"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat"
+                        android:text="asdasdasdasdasdas"
+                        android:layout_weight="6"
+                        android:textColor="#ff7676"
+                        android:textSize="13sp"
+                        android:textStyle="normal"
+
+                        android:visibility="visible" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:layout_below="@id/fragment_employer_profilepage_editProfilepage_contactContainer">
+
+                <Button
+                    android:id="@+id/fragment_employer_profilepage_editprofilepage_editProfile_btn"
+                    android:layout_width="170dp"
+                    android:layout_height="70dp"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_alignParentLeft="true"
+                    android:textSize="16sp"
+                    android:text="Edit Profile"
+                    android:textStyle="normal"
+                    android:fontFamily="@font/montserrat"
+                    android:background="@drawable/rounded_square_btn"/>
+
+                <Button
+                    android:id="@+id/fragment_employer_profilepage_editprofilepage_cancel_btn"
+                    android:layout_width="170dp"
+                    android:layout_height="70dp"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_alignParentRight="true"
+                    android:text="Cancel"
+                    android:textSize="16sp"
+                    android:textStyle="normal"
+                    android:fontFamily="@font/montserrat"
+                    android:background="@drawable/rounded_square_btn"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

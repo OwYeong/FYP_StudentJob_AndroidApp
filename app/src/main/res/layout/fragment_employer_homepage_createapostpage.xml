@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:paddingRight="20dp"
+    android:paddingLeft="20dp"
+    android:background="@android:color/transparent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ScrollView
+            android:id="@+id/fragment_employer_homepage_createAPostpage_scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/fragment_employer_homepage_createAPostpage_postImage_imageView"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/imageview_border"
+                    android:padding="5dp"
+                    android:visibility="visible"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/default_select_picture" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/textmeone"
+                    android:text="Post Title"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/fragment_employer_homepage_createAPostpage_postTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/custom_edittext"
+                    android:fontFamily="@font/montserrat"
+                    android:inputType="text|textNoSuggestions"
+                    android:padding="10dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/fragment_employer_homepage_createAPostpage_postTitle_alert"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat"
+                    android:text="asdasdasdasdasdas"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#ff7676"
+                    android:textSize="13sp"
+                    android:textStyle="normal"
+
+                    android:visibility="visible" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/textmeone"
+                    android:text="Description"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp" />
+
+
+                <EditText
+                    android:id="@+id/fragment_employer_homepage_createAPostpage_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/custom_edittext"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890\n "
+                    android:fontFamily="@font/montserrat"
+                    android:gravity="top|left"
+                    android:inputType="textMultiLine"
+                    android:overScrollMode="always"
+                    android:padding="10dp"
+                    android:scrollbarStyle="insideInset"
+                    android:scrollbars="vertical"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/fragment_employer_homepage_createAPostpage_description_alert"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat"
+                    android:text="asdasdasdasdasdas"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#ff7676"
+                    android:textSize="13sp"
+                    android:textStyle="normal"
+
+                    android:visibility="visible" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="10"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:paddingRight="10dp"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/textmeone"
+                            android:text="Job Skill Category"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="20sp" />
+
+                        <Spinner
+                            android:id="@+id/fragment_employer_homepage_createAPostpage_jobSkillCategory_spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/spinner_background"
+                            android:entries="@array/project_type_arrays"
+                            android:padding="10dp"
+                            android:prompt="@string/spinner_prompt" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/fragment_employer_homepage_createAPostpage_offersWord_textview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/textmeone"
+                            android:text="Budgets"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="20sp" />
+
+                        <EditText
+                            android:id="@+id/fragment_employer_homepage_createAPostpage_offers"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/custom_edittext"
+                            android:fontFamily="@font/montserrat"
+                            android:inputType="text|textNoSuggestions"
+                            android:padding="10dp"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="15sp" />
+                        <TextView
+                            android:id="@+id/fragment_employer_homepage_createAPostpage_offers_alert"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat"
+                            android:text="asdasdasdasdasdas"
+                            android:textColor="#ff7676"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="13sp"
+                            android:textStyle="normal"
+
+                            android:visibility="visible" />
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/textmeone"
+                    android:text="Job Skill Category"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp" />
+
+                <Spinner
+                    android:id="@+id/fragment_employer_homepage_createAPostpage_jobType_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/spinner_background"
+                    android:entries="@array/project_type_arrays"
+                    android:padding="10dp"
+                    android:prompt="@string/spinner_prompt" />
+
+                <RelativeLayout
+                    android:id="@+id/fragment_employer_homepage_createAPostpage_partTime_additionInfo_section"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/textmeone"
+                            android:text="Location"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="20sp" />
+
+                        <EditText
+                            android:id="@+id/fragment_employer_homepage_createAPostpage_postWorkLocation"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/custom_edittext"
+                            android:fontFamily="@font/montserrat"
+                            android:textAlignment="textStart"
+                            android:inputType="textPostalAddress|textMultiLine"
+                            android:lineSpacingExtra="4sp"
+                            android:gravity="start"
+                            android:padding="10dp"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/fragment_employer_homepage_createAPostpage_postWorkLocation_alert"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat"
+                            android:text="asdasdasdasdasdas"
+                            android:textColor="#ff7676"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="13sp"
+                            android:textStyle="normal"
+
+                            android:visibility="visible" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/textmeone"
+                            android:text="Working Hours"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="20sp" />
+
+                        <EditText
+                            android:id="@+id/fragment_employer_homepage_createAPostpage_postWorkHours"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/custom_edittext"
+                            android:fontFamily="@font/montserrat"
+                            android:inputType="text|textNoSuggestions"
+                            android:padding="10dp"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/fragment_employer_homepage_createAPostpage_postWorkHours_alert"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat"
+                            android:text="asdasdasdasdasdas"
+                            android:textColor="#ff7676"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="13sp"
+                            android:textStyle="normal"
+
+                            android:visibility="visible" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="30dp">
+
+                    <Button
+                        android:id="@+id/fragment_employer_homepage_createAPostpage_createPost_btn"
+                        android:layout_width="170dp"
+                        android:layout_height="70dp"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_alignParentLeft="true"
+                        android:textSize="16sp"
+                        android:text="Create Post"
+                        android:textStyle="normal"
+                        android:fontFamily="@font/montserrat"
+                        android:background="@drawable/rounded_square_btn"/>
+
+                    <Button
+                        android:id="@+id/fragment_employer_homepage_createAPostpage_cancel_btn"
+                        android:layout_width="170dp"
+                        android:layout_height="70dp"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_alignParentRight="true"
+                        android:text="Cancel"
+                        android:textSize="16sp"
+                        android:textStyle="normal"
+                        android:fontFamily="@font/montserrat"
+                        android:background="@drawable/rounded_square_btn"/>
+                </RelativeLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

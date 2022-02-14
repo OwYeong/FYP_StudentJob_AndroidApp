@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@android:color/transparent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/activity_register_page_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="@string/app"
+                    android:textSize="32sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/timeburner_bold"
+                    android:textColor="@color/colorPrimary"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="Platform for Student to Find Jobs"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/timeburner_bold"
+                    android:textColor="#5FC6FF"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/textmeone"
+                    android:text="Account Type"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp" />
+
+                <Spinner
+                    android:id="@+id/activity_register_page_accountType_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/spinner_background"
+                    android:entries="@array/account_type_arrays"
+                    android:padding="10dp"
+                    android:paddingLeft="20dp"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="10"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:paddingRight="10dp"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/textmeone"
+                            android:text="First Name"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="20sp" />
+
+                        <EditText
+                            android:id="@+id/activity_register_page_firstName"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/custom_edittext"
+                            android:fontFamily="@font/montserrat"
+                            android:inputType="text|textNoSuggestions"
+                            android:padding="10dp"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="15sp" />
+                        <TextView
+                            android:id="@+id/activity_register_page_firstName_alert"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat"
+                            android:text="asdasdasdasdasdas"
+                            android:textColor="#ff7676"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="13sp"
+                            android:textStyle="normal"
+
+                            android:visibility="visible" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/fragment_employer_homepage_createAPostpage_offersWord_textview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/textmeone"
+                            android:text="Last Name"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="20sp" />
+
+                        <EditText
+                            android:id="@+id/activity_register_page_lastName"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/custom_edittext"
+                            android:fontFamily="@font/montserrat"
+                            android:inputType="text|textNoSuggestions"
+                            android:padding="10dp"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="15sp" />
+                        <TextView
+                            android:id="@+id/activity_register_page_lastName_alert"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat"
+                            android:text="asdasdasdasdasdas"
+                            android:textColor="#ff7676"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="13sp"
+                            android:textStyle="normal"
+
+                            android:visibility="visible" />
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/textmeone"
+                    android:text="Username"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/activity_register_page_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/custom_edittext"
+                    android:fontFamily="@font/montserrat"
+                    android:inputType="text|textNoSuggestions"
+                    android:padding="10dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15sp" />
+                <TextView
+                    android:id="@+id/activity_register_page_username_alert"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat"
+                    android:text="asdasdasdasdasdas"
+                    android:textColor="#ff7676"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="13sp"
+                    android:textStyle="normal"
+
+                    android:visibility="visible" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/textmeone"
+                    android:text="Password"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/activity_register_page_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/custom_edittext"
+                    android:fontFamily="@font/montserrat"
+                    android:inputType="textPassword"
+                    android:padding="10dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15sp" />
+                <TextView
+                    android:id="@+id/activity_register_page_password_alert"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat"
+                    android:text="asdasdasdasdasdas"
+                    android:textColor="#ff7676"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="13sp"
+                    android:textStyle="normal"
+
+                    android:visibility="visible" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/textmeone"
+                    android:text="Confirm Password"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/activity_register_page_confirmPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/custom_edittext"
+                    android:fontFamily="@font/montserrat"
+                    android:inputType="textPassword"
+                    android:padding="10dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15sp" />
+                <TextView
+                    android:id="@+id/activity_register_page_confirmPassword_alert"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat"
+                    android:text="asdasdasdasdasdas"
+                    android:textColor="#ff7676"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="13sp"
+                    android:textStyle="normal"
+
+                    android:visibility="visible" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/textmeone"
+                    android:text="Email"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/activity_register_page_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/custom_edittext"
+                    android:fontFamily="@font/montserrat"
+                    android:inputType="text|textNoSuggestions"
+                    android:padding="10dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15sp" />
+                <TextView
+                    android:id="@+id/activity_register_page_email_alert"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat"
+                    android:text="asdasdasdasdasdas"
+                    android:textColor="#ff7676"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="13sp"
+                    android:textStyle="normal"
+
+                    android:visibility="visible" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/textmeone"
+                    android:text="Contact Number"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/activity_register_page_contactNum"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/custom_edittext"
+                    android:fontFamily="@font/montserrat"
+                    android:inputType="text|textNoSuggestions"
+                    android:padding="10dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15sp" />
+                <TextView
+                    android:id="@+id/activity_register_page_contactNum_alert"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat"
+                    android:text="asdasdasdasdasdas"
+                    android:textColor="#ff7676"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="13sp"
+                    android:textStyle="normal"
+
+                    android:visibility="visible" />
+
+                <LinearLayout
+                    android:id="@+id/activity_register_page_studentAcc_section"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/textmeone"
+                        android:text="General Skill Category"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20sp" />
+
+                    <Spinner
+                        android:id="@+id/activity_register_page_generalSkillCat_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/spinner_background"
+                        android:entries="@array/profile_skill_category_arrays"
+                        android:padding="10dp"
+                        android:paddingLeft="20dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="10"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:paddingRight="10dp"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:fontFamily="@font/textmeone"
+                                android:text="College Name"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="20sp" />
+
+                            <EditText
+                                android:id="@+id/activity_register_page_collegeName"
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/custom_edittext"
+                                android:fontFamily="@font/montserrat"
+                                android:inputType="text|textNoSuggestions"
+                                android:padding="10dp"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="15sp" />
+                            <TextView
+                                android:id="@+id/activity_register_page_collegeName_alert"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/montserrat"
+                                android:text="asdasdasdasdasdas"
+                                android:textColor="#ff7676"
+                                android:layout_marginLeft="10dp"
+                                android:textSize="13sp"
+                                android:textStyle="normal"
+
+                                android:visibility="visible" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:fontFamily="@font/textmeone"
+                                android:text="Course Name"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="20sp" />
+
+                            <EditText
+                                android:id="@+id/activity_register_page_courseName"
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/custom_edittext"
+                                android:fontFamily="@font/montserrat"
+                                android:inputType="text|textNoSuggestions"
+                                android:padding="10dp"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="15sp" />
+                            <TextView
+                                android:id="@+id/activity_register_page_courseName_alert"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/montserrat"
+                                android:text="asdasdasdasdasdas"
+                                android:textColor="#ff7676"
+                                android:layout_marginLeft="10dp"
+                                android:textSize="13sp"
+                                android:textStyle="normal"
+
+                                android:visibility="visible" />
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="30dp">
+
+                    <Button
+                        android:id="@+id/activity_register_page_createAcc_btn"
+                        android:layout_width="170dp"
+                        android:layout_height="70dp"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_alignParentLeft="true"
+                        android:textSize="16sp"
+                        android:text="Create Account"
+                        android:textStyle="normal"
+                        android:fontFamily="@font/montserrat"
+                        android:background="@drawable/rounded_square_btn"/>
+
+                    <Button
+                        android:id="@+id/activity_register_page_cancel_btn"
+                        android:layout_width="170dp"
+                        android:layout_height="70dp"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_alignParentRight="true"
+                        android:text="Cancel"
+                        android:textSize="16sp"
+                        android:textStyle="normal"
+                        android:fontFamily="@font/montserrat"
+                        android:background="@drawable/rounded_square_btn"/>
+                </RelativeLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+        <RelativeLayout
+            android:id="@+id/activity_register_page_loadingPanel"
+            style="@style/GenericProgressBackground"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ProgressBar
+                style="@style/GenericProgressIndicator"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

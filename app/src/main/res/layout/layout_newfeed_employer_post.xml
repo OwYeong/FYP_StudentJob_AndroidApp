@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="20dp">
+
+    <RelativeLayout
+        android:id="@+id/newfeed_employer_post_layout_headerContainer"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <FrameLayout android:id="@+id/newfeed_employer_post_layout_headerContainer_profilePicContainer"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true">
+
+            <ImageView
+                android:id="@+id/newfeed_employer_post_layout_headerContainer_profilePic"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center"
+                android:scaleType="fitCenter"
+                android:src="@drawable/default_designer_profilepic" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/profile_circle_crop" />
+
+        </FrameLayout>
+        <LinearLayout
+            android:id="@+id/newfeed_employer_post_layout_headerContainer_additionInfo_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_toLeftOf="@id/newfeed_employer_post_layout_headerContainer_applyNow_btn"
+            android:layout_toRightOf="@id/newfeed_employer_post_layout_headerContainer_profilePicContainer"
+            android:paddingLeft="20dp"
+            android:paddingTop="2dp">
+            <TextView
+                android:id="@+id/newfeed_employer_post_layout_headerContainer_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Employer User Name"
+                android:fontFamily="@font/textmeone"
+                android:textStyle="normal"
+                android:textSize="18sp"
+                android:textColor="@color/textColorPrimary" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Employer"
+                android:fontFamily="@font/textmeone"
+                android:textStyle="normal"
+                android:textSize="15sp"
+                android:textColor="@color/textColorContrast" />
+
+        </LinearLayout>
+        
+        <Button
+            android:id="@+id/newfeed_employer_post_layout_headerContainer_applyNow_btn"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:background="@drawable/rounded_square_btn"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="Apply Now"
+            android:fontFamily="@font/montserrat"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            android:textColor="@color/textColorPrimary"
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/newfeed_employer_post_layout_contentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/newfeed_employer_post_layout_headerContainer"
+        android:paddingTop="10dp">
+
+        <ImageView
+            android:id="@+id/newfeed_employer_post_layout_contentContainer_postPic"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:src="@drawable/default_employer_post_pic"
+            android:adjustViewBounds="true"
+            android:visibility="visible"
+            android:scaleType="fitCenter" />
+
+        <LinearLayout
+            android:id="@+id/newfeed_employer_post_layout_contentContainer_postDetailContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/newfeed_employer_post_layout_contentContainer_postPic"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Posted on: "
+                    android:fontFamily="@font/textmeone"
+                    android:textSize="14sp"
+                    android:layout_toLeftOf="@id/newfeed_employer_post_layout_contentContainer_postDetailContainer_dateTime"
+                    android:textColor="@color/textColorPrimary"/>
+
+                <TextView
+                    android:id="@+id/newfeed_employer_post_layout_contentContainer_postDetailContainer_dateTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+
+                    android:fontFamily="@font/textmeone"
+                    android:text="2019-4-20 23:30:30"
+                    android:textColor="@color/textColorPrimary"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+                <TextView
+                    android:id="@+id/newfeed_employer_post_layout_contentContainer_postDetailContainer_jobType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/textmeone"
+                    android:text="Part Time Job / Freelance Job"
+                    android:textSize="24sp"
+                    android:textColor="@color/textColorHighContrast"/>
+
+                <TextView
+                    android:id="@+id/newfeed_employer_post_layout_contentContainer_postDetailContainer_offers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/textmeone"
+                    android:text="Offers: Rm 20/hrs "
+                    android:textSize="16sp"
+                    android:textColor="@color/textColorHighContrast"/>
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/newfeed_employer_post_layout_contentContainer_postDetailContainer_postTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="The Employer Post Title is written here "
+                android:fontFamily="@font/textmeone"
+                android:textStyle="normal"
+                android:textSize="22sp"
+                android:textColor="@color/textColorPrimary"
+                android:paddingBottom="10dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ffffff"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"/>
+
+            <LinearLayout
+                android:id="@+id/newfeed_employer_post_layout_contentContainer_postDetailContainer_partTimeAdditionInfoContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:orientation="vertical"
+                android:visibility="visible">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Working Hours"
+                    android:fontFamily="@font/montserrat"
+                    android:textStyle="normal"
+                    android:textColor="@color/textColorContrast"
+                    android:textSize="18sp"
+                    android:layout_marginTop="10dp"
+                    android:paddingBottom="5dp"/>
+                <TextView
+                    android:id="@+id/newfeed_employer_post_layout_contentContainer_postDetailContainer_workingHours"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Working Hour: From What Time to What Time"
+                    android:fontFamily="@font/montserrat"
+                    android:textStyle="normal"
+                    android:textSize="16sp"
+                    android:textColor="@color/textColorPrimary" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Working Location"
+                    android:fontFamily="@font/montserrat"
+                    android:textStyle="normal"
+                    android:textColor="@color/textColorContrast"
+                    android:textSize="18sp"
+                    android:paddingBottom="5dp"/>
+                <TextView
+                    android:id="@+id/newfeed_employer_post_layout_contentContainer_postDetailContainer_Location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Location: Address is written here"
+                    android:fontFamily="@font/montserrat"
+                    android:textStyle="normal"
+                    android:textSize="16sp"
+                    android:textColor="@color/textColorPrimary" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description Of Project"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/montserrat"
+                android:textStyle="normal"
+                android:textColor="@color/textColorContrast"
+                android:textSize="18sp"
+                android:paddingBottom="5dp"/>
+
+            <TextView
+                android:id="@+id/newfeed_employer_post_layout_contentContainer_postDetailContainer_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The Description of project is written here. "
+                android:fontFamily="@font/montserrat"
+                android:textStyle="normal"
+                android:textColor="@color/textColorPrimary"
+                android:textSize="16sp"/>
+
+
+
+        </LinearLayout>
+        
+
+    </RelativeLayout>
+
+</RelativeLayout>

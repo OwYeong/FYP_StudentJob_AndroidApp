@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">StudentJob</string>
+    <string name="app">StudentJob</string>
+    <string name="app_slogan">Platform for Student to find Jobs</string>
+    <string name="greeting">Welcome to Student Job</string>
+    <string name="spinner_prompt">Choose A Project Type</string>
+
+    <string-array name="project_type_arrays">
+        <item>Please Select a Project Type</item>
+        <item>GitHub</item>
+        <item>Behance</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="account_type_arrays">
+        <item>Student</item>
+        <item>Employer</item>
+    </string-array>
+
+    <string-array name="profile_skill_category_arrays">
+        <item>Programmer</item>
+        <item>Designer</item>
+        <item>Programmer And Designer</item>
+        <item>Others</item>
+    </string-array>
+
+
+    <string-array name="post_job_skill_category_arrays">
+        <item>Programmer</item>
+        <item>Designer</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="post_job_type_arrays">
+        <item>PartTime</item>
+        <item>Freelance</item>
+    </string-array>
+
+    <string-array name="skill_level_arrays">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string-array name="time_arrays">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+
+    <string-array name="time_format_arrays">
+        <item>A.M.</item>
+        <item>P.M.</item>
+    </string-array>
+
+</resources>

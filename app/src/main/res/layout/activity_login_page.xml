@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".LoginPage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:adjustViewBounds="true">
+
+
+    <LinearLayout
+        android:id="@+id/main_container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:adjustViewBounds="true"
+        android:background="@drawable/bg"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <!---Header-->
+
+        <RelativeLayout
+            android:id="@+id/header_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+
+                <!---Logo Container-->
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/logo_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/biggear2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="172dp"
+                        android:src="@drawable/biggear"
+                        app:layout_constraintStart_toStartOf="@+id/logo"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/smallgear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="96dp"
+                        android:layout_marginTop="76dp"
+                        android:src="@drawable/smallgear"
+                        app:layout_constraintStart_toStartOf="@+id/logo"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/biggear1"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginTop="32dp"
+                        android:layout_marginEnd="120dp"
+                        android:src="@drawable/biggear"
+                        app:layout_constraintEnd_toEndOf="@+id/logo"
+                        app:layout_constraintTop_toTopOf="@+id/logo" />
+
+                    <ImageView
+                        android:id="@+id/logo"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="44dp"
+                        android:layout_marginEnd="8dp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/loginscreenlogo"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.497"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintWidth_percent="0.4" />
+
+
+                </android.support.constraint.ConstraintLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/timeburner"
+                    android:lineHeight="0sp"
+                    android:text="@string/app"
+                    android:textColor="@color/app_name_color"
+                    android:textSize="@dimen/app_name_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/textmeone"
+                    android:text="@string/app_slogan"
+                    android:textColor="@color/app_slogan_color"
+                    android:textSize="@dimen/app_slogan_size"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+
+        </RelativeLayout><!---Header-->
+
+        <!-- Login Section -->
+        <RelativeLayout
+            android:id="@+id/login_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:visibility="visible"
+                android:weightSum="6">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:autoSizeTextType="uniform"
+                    android:fontFamily="@font/textmeone"
+                    android:maxHeight="30dp"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:text="@string/greeting"
+                    android:textAlignment="center"
+                    android:textColor="#1ffcfc" />
+
+                <Button
+                    android:id="@+id/login_id_btn"
+                    android:layout_width="295dp"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/rounded_rec_btn"
+                    android:fontFamily="@font/montserrat"
+                    android:maxHeight="30dp"
+                    android:text="Get Started"
+                    android:textColor="#ffffff"
+                    android:textSize="23sp"
+                    android:textStyle="bold"
+
+                    />
+
+                <Button
+                    android:id="@+id/about_us_btn"
+                    android:layout_width="295dp"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/rounded_rec_btn"
+                    android:fontFamily="@font/montserrat"
+                    android:maxHeight="30dp"
+                    android:text="About Us"
+                    android:textColor="#ffffff"
+                    android:textSize="23sp"
+                    android:textStyle="bold" />
+
+
+                <!-- info for Image Button-->
+                <!--Background:null use to declare the image transparency-->
+                <!--android:foreground="?attr/selectableItemBackground" == touch effect-->
+
+
+            </LinearLayout>
+
+        </RelativeLayout><!---Login section end-->
+
+        <RelativeLayout
+            android:id="@+id/login_with_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"><!---Login with id section-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/id_name_input"
+                    android:layout_width="299dp"
+                    android:layout_height="39dp"
+                    android:layout_marginTop="28dp"
+                    android:background="@drawable/input_bar"
+                    android:fontFamily="@font/montserrat"
+                    android:hint="Username"
+                    android:inputType="text"
+                    android:paddingLeft="20dp"
+                    android:text=""
+                    android:textColor="#ffffff"
+                    android:textColorHint="#ffffff"
+                    android:textSize="20sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/username_alert"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat"
+                    android:text=""
+                    android:textColor="#ff7676"
+                    android:textSize="13sp"
+                    android:textStyle="normal"
+                    android:visibility="visible" />
+
+
+                <EditText
+                    android:id="@+id/id_password_input"
+                    android:layout_width="299dp"
+                    android:layout_height="39dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/input_bar"
+                    android:fontFamily="@font/montserrat"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:paddingLeft="20dp"
+                    android:text=""
+                    android:textColor="#ffffff"
+                    android:textColorHint="#ffffff"
+                    android:textSize="20sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/password_alert"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat"
+                    android:text=""
+                    android:textColor="#ff7676"
+                    android:textSize="13sp"
+                    android:textStyle="normal"
+                    android:visibility="visible" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/register_button"
+                        android:layout_width="133dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="25dp"
+                        android:background="@drawable/rounded_square_btn"
+                        android:fontFamily="@font/montserrat"
+                        android:text="Register"
+                        android:textColor="#ffffff"
+                        android:textSize="20dp"
+                        android:textStyle="normal"
+
+
+                        />
+
+                    <Button
+                        android:id="@+id/login_id"
+                        android:layout_width="133dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/rounded_rec_btn"
+                        android:fontFamily="@font/montserrat"
+                        android:text="Login"
+                        android:textColor="#ffffff"
+                        android:textSize="20dp"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout><!---Login with id section-->
+
+        <RelativeLayout
+            android:id="@+id/login_with_guest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"><!---Login with guest section-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+
+                <EditText
+                    android:id="@+id/gst_name_input"
+                    android:layout_width="299dp"
+                    android:layout_height="39dp"
+                    android:layout_marginTop="28dp"
+                    android:background="@drawable/input_bar"
+                    android:fontFamily="@font/montserrat"
+                    android:hint="Your Name"
+                    android:paddingLeft="20dp"
+                    android:textColor="#ffffff"
+                    android:textColorHint="#ffffff"
+                    android:textSize="20sp"
+                    android:textStyle="normal" />
+
+
+                <Button
+                    android:layout_width="133dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/rounded_square_btn"
+                    android:fontFamily="@font/montserrat"
+                    android:text="Proceed"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp"
+                    android:textStyle="normal" />
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout><!---Login with guest section-->
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/loadingPanel"
+        style="@style/GenericProgressBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ProgressBar
+            style="@style/GenericProgressIndicator"/>
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

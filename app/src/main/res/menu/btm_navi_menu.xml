@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--This menu resources file is created to for using of <BottomNavigationView layout> -->
+
+    <item
+        android:id="@+id/btm_home_btn"
+        android:icon="@drawable/btm_navi_home_icon_selector"
+        android:title="Home" />
+    <item
+        android:id="@+id/btm_message_btn"
+        android:icon="@drawable/btm_navi_msg_icon_selector"
+        android:title="Message"/>
+    <item
+        android:id="@+id/btm_request_btn"
+        android:icon="@drawable/btm_navi_request_icon_selector"
+        android:title="Request"/>
+    <item
+        android:id="@+id/btm_profile_btn"
+        android:icon="@drawable/btm_navi_profile_icon_selector"
+        android:title="Profile"/>
+
+
+
+
+</menu>

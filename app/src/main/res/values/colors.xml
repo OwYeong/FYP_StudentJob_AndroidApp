@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#FA50FF</color>
+    <color name="app_name_color">#ffffff</color>
+    <color name="app_slogan_color">#5fc6ff</color>
+    <color name="navigation_drawer_background">#3347C1</color>
+    <color name="white">#FFFFFF</color>
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="textColorContrast">#10A6BF</color>
+    <color name="textColorHighContrast">#08F4ED</color>
+    <color name="spinnerColor">#4F4FB7</color>
+    <color name="text_hint_color">#1F1F7C</color>
+
+</resources>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/layout_employer_mypost_bigContainer"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/layout_employer_mypost_jobType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/textmeone"
+                android:textStyle="normal"
+                android:textSize="23sp"
+                android:textColor="@color/textColorHighContrast"
+                android:text="Freelance / Parttime Job"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"/>
+            
+            <TextView
+                android:id="@+id/layout_employer_mypost_offers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/textmeone"
+                android:textStyle="normal"
+                android:textSize="23sp"
+                android:textColor="@color/textColorHighContrast"
+                android:text="Budget: "
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+
+            
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/layout_employer_mypost_postTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/textmeone"
+            android:textStyle="normal"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="5dp"
+            android:textSize="20sp"
+            android:text="The Post Title is written here"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+            <Button
+                android:id="@+id/layout_employer_mypost_editPost_btn"
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:background="@drawable/rounded_rectangle_btn_without_stroke"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="@font/textmeone"
+                android:textStyle="normal"
+                android:textSize="20sp"
+                android:text="Edit Post"/>
+
+            <Button
+                android:id="@+id/layout_employer_mypost_deletePost_btn"
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:background="@drawable/rounded_rectangle_btn_without_stroke"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="@font/textmeone"
+                android:textStyle="normal"
+                android:textSize="20sp"
+                android:layout_marginLeft="20dp"
+                android:text="Delete Post"
+                android:layout_toRightOf="@id/layout_employer_mypost_editPost_btn"/>
+
+            <ImageView
+                android:id="@+id/layout_employer_mypost_doneHiringPost_btn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/tick_icon"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

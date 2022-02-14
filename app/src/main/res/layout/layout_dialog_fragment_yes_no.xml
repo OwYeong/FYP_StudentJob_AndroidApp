@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@android:color/transparent"
+    android:layout_gravity="center">
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="280dp"
+        android:gravity="center"
+        android:background="@android:color/transparent"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/rounded_rectangle_bg"
+            android:background="@android:color/transparent"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@android:color/transparent">
+
+            <TextView
+                android:id="@+id/layout_dialog_fragment_yes_no_title"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/textmeone"
+                android:textSize="16sp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="normal"
+                android:text="MessageTitle"
+                android:textAlignment="center"
+                android:layout_marginTop="30dp"/>
+
+
+
+
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp">
+
+
+            <Button
+                android:id="@+id/layout_dialog_fragment_yes_no_yesBtn"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:text="Yes"
+                android:fontFamily="@font/montserrat"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:textColor="@color/colorPrimary"
+                android:background="@drawable/rounded_square_btn"/>
+
+            <Button
+                android:id="@+id/layout_dialog_fragment_yes_no_noBtn"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:text="NO"
+                android:fontFamily="@font/montserrat"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:textColor="@color/colorPrimary"
+                android:background="@drawable/rounded_square_btn"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

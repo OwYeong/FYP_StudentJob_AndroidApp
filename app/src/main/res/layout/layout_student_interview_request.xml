@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="20dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:layout_marginBottom="30dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Interview Request"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="@font/textmeone"
+            android:textSize="25sp"
+            android:textStyle="normal"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:id="@+id/layout_student_interview_request_jobType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/textmeone"
+                android:textStyle="normal"
+                android:textSize="23sp"
+                android:textColor="@color/textColorHighContrast"
+                android:text="Freelance / Parttime Job"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/layout_student_interview_request_offers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/textmeone"
+                android:textStyle="normal"
+                android:textSize="23sp"
+                android:textColor="@color/textColorHighContrast"
+                android:text="Budget: "
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:id="@+id/layout_student_interview_request_postTitle"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/textmeone"
+                android:textStyle="normal"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginTop="5dp"
+                android:textSize="20sp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:text="The Post Title is written here"/>
+
+
+        </RelativeLayout>
+
+        <View
+            android:background="#ffffff"
+            android:layout_width = "match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="@font/montserrat"
+            android:textStyle="normal"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:gravity="center_vertical"
+            android:text="An employer Has Accepted Your Offer And Requested For An Interview With You."/>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:id="@+id/layout_student_interview_request_employerInfo_container"
+                android:layout_width="match_parent"
+                android:layout_height="70dp">
+
+                <FrameLayout
+                    android:id="@+id/layout_student_interview_request_profilePicContainer"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentLeft="true">
+
+                    <ImageView
+                        android:id="@+id/layout_student_interview_request_profilePic"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:adjustViewBounds="true"
+                        android:layout_gravity="center"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/default_designer_profilepic" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/profile_circle_crop" />
+
+                </FrameLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_toRightOf="@id/layout_student_interview_request_profilePicContainer"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="2dp">
+                    <TextView
+                        android:id="@+id/layout_student_interview_request_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Employer User Name"
+                        android:fontFamily="@font/textmeone"
+                        android:textStyle="normal"
+                        android:textSize="23sp"
+                        android:textColor="@color/textColorPrimary" />
+                    <TextView
+                        android:id="@+id/layout_student_interview_request_skillCat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Employer"
+                        android:fontFamily="@font/textmeone"
+                        android:textStyle="normal"
+                        android:textSize="20sp"
+                        android:textColor="@color/textColorContrast" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/layout_student_interview_request_requestedWord"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Requested on: "
+                    android:fontFamily="@font/textmeone"
+                    android:textSize="14sp"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="@color/textColorPrimary"/>
+
+                <TextView
+                    android:id="@+id/layout_student_interview_request_requestedDateTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/layout_student_interview_request_requestedWord"
+                    android:fontFamily="@font/textmeone"
+                    android:text="2019-4-20 23:30:30"
+                    android:textColor="@color/textColorPrimary"
+                    android:textSize="14sp"
+                    android:textStyle="normal" />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Message"
+                android:fontFamily="@font/textmeone"
+                android:textStyle="normal"
+                android:textColor="@color/textColorHighContrast"
+                android:textSize="25sp"/>
+
+            <TextView
+                android:id="@+id/layout_student_interview_request_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Student Message will be written here, as they apply the job"
+                android:textSize="16sp"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="@font/montserrat"
+                android:textStyle="normal"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Interview Information"
+                android:fontFamily="@font/textmeone"
+                android:textStyle="normal"
+                android:textColor="@color/textColorHighContrast"
+                android:textSize="25sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:weightSum="10"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="5">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Date"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorPrimary"
+                        android:fontFamily="@font/montserrat"
+                        android:textStyle="normal"
+                        android:layout_marginBottom="5dp"/>
+
+                    <TextView
+                        android:id="@+id/layout_student_interview_request_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Date"
+                        android:textSize="16sp"
+                        android:textColor="@color/colorPrimary"
+                        android:fontFamily="@font/montserrat"
+                        android:textStyle="normal"
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="5">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Time"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorPrimary"
+                        android:fontFamily="@font/montserrat"
+                        android:textStyle="normal"
+                        android:layout_marginBottom="5dp"/>
+
+                    <TextView
+                        android:id="@+id/layout_student_interview_request_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Date"
+                        android:textSize="16sp"
+                        android:textColor="@color/colorPrimary"
+                        android:fontFamily="@font/montserrat"
+                        android:textStyle="normal"
+                        />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="InterView Location"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="@font/montserrat"
+                android:textStyle="normal"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:id="@+id/layout_student_interview_request_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Date"
+                android:textSize="16sp"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="@font/montserrat"
+                android:textStyle="normal"
+                />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_student_interview_request_button_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <Button
+                    android:id="@+id/layout_student_interview_request_accept_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="5"
+                    android:text="Accept"
+                    android:textColor="@color/colorPrimary"
+                    android:fontFamily="@font/montserrat"
+                    android:textSize="13sp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/rounded_square_btn"/>
+
+                <Button
+                    android:id="@+id/layout_student_interview_request_decline_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="5"
+                    android:text="Decline"
+                    android:textColor="@color/colorPrimary"
+                    android:fontFamily="@font/montserrat"
+                    android:layout_alignParentRight="true"
+                    android:textSize="13sp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/rounded_square_btn"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+        <Button
+            android:id="@+id/layout_student_interview_request_discussTimetable_btn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Discuss Time Table With Him"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="@font/montserrat"
+            android:layout_alignParentRight="true"
+            android:textSize="13sp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_square_btn"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+
+    <ScrollView
+        android:id="@+id/fragment_student_requestpage_post_request_previewpage_scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:fillViewport="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/fragment_student_requestpage_post_request_previewpage_headerContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/textmeone"
+                        android:textStyle="bold"
+                        android:textSize="23sp"
+                        android:textColor="@color/textColorHighContrast"
+                        android:text="Post Request Information Preview"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"/>
+
+
+
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/fragment_student_requestpage_post_request_previewpage_requestedDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/textmeone"
+                    android:textStyle="normal"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:text="Request Send on : ......."/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/custom_btm_line"
+                    android:background="@android:color/transparent"
+                    android:scaleType="centerInside"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:layout_below="@id/fragment_student_requestpage_post_request_previewpage_headerContainer">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp">
+
+                    <FrameLayout
+                        android:id="@+id/fragment_student_requestpage_post_request_previewpage_profilePicContainer"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_alignParentLeft="true">
+
+                        <ImageView
+                            android:id="@+id/fragment_student_requestpage_post_request_previewpage_profilePic"
+                            android:layout_width="65dp"
+                            android:layout_height="65dp"
+                            android:adjustViewBounds="true"
+                            android:layout_gravity="center"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/default_designer_profilepic" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/profile_circle_crop" />
+
+                    </FrameLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_toRightOf="@id/fragment_student_requestpage_post_request_previewpage_profilePicContainer"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="2dp">
+                        <TextView
+                            android:id="@+id/fragment_student_requestpage_post_request_previewpage_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Employer User Name"
+                            android:fontFamily="@font/textmeone"
+                            android:textStyle="normal"
+                            android:textSize="23sp"
+                            android:textColor="@color/textColorPrimary" />
+                        <TextView
+                            android:id="@+id/fragment_student_requestpage_post_request_previewpage_skillCat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Employer"
+                            android:fontFamily="@font/textmeone"
+                            android:textStyle="normal"
+                            android:textSize="20sp"
+                            android:textColor="@color/textColorContrast" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Message"
+                    android:fontFamily="@font/textmeone"
+                    android:textStyle="normal"
+                    android:textColor="@color/textColorHighContrast"
+                    android:textSize="25sp"/>
+
+                <TextView
+                    android:id="@+id/fragment_student_requestpage_post_request_previewpage_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Student Message will be written here, as they apply the job"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimary"
+                    android:fontFamily="@font/montserrat"
+                    android:textStyle="normal"
+                    android:layout_marginBottom="10dp"/>
+
+
+
+
+                <Button
+                    android:id="@+id/fragment_student_requestpage_post_request_previewpage_goBack_Btn"
+                    android:layout_width="160dp"
+                    android:layout_height="60dp"
+                    android:text="Go Back"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="30dp"
+                    android:textColor="@color/colorPrimary"
+                    android:fontFamily="@font/montserrat"
+                    android:textSize="15sp"
+                    android:background="@drawable/rounded_square_btn"/>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

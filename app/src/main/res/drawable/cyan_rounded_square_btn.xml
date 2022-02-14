@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#10A6BF"/>
+    <corners android:radius="20dp"/>
+</shape>
+
+    <!--Declare the style of this shape.... Rounded corner rectangle-->
+    <!--To use
+        Add background="@drawable/green_rounded_rec_btn"
+    -->

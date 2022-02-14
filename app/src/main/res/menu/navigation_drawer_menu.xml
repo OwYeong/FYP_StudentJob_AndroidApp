@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--This menu resources file is created to for using of <navigation drawer layout> -->
+
+    <item
+        android:id="@+id/navi_drawer_profile_btn"
+        android:title="Profile" />
+
+    <item
+        android:id="@+id/navi_drawer_logout_btn"
+        android:title="Log out" />
+
+</menu>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<font-family xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!-- This XML is use to declare one type custom font
+
+             So
+             Can use fontfamily="@font/font_name"
+            -->
+
+
+    <!-- attribute set twice?
+        android:  .... (set for API 26++)
+        app:  .... (set for API 16++)
+     -->
+
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/montserrat_regular"
+        app:fontStyle="normal"
+        app:fontWeight="400"
+        app:font="@font/montserrat_regular"
+        /><!--normal custom font src-->
+
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="700"
+        android:font="@font/montserrat_bold"
+        app:fontStyle="normal"
+        app:fontWeight="700"
+        app:font="@font/montserrat_bold"
+        /><!--bold custom font src-->
+
+    <!--fontstyle can use to declare the custom font style
+             So When i use textstyle="normal" it will use @font/timeburner_normal-->
+
+    <!--In font src, Fontstyle doesn't have ="bold" olny (normal and italic)
+        to declare custom bold font
+        put fontweight=700 && fontsyle="normal"
+
+             So When i use textstyle="bold" == using fontweight 700-->
+
+</font-family>

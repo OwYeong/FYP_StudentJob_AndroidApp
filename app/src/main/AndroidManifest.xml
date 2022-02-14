@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.oybx.fyp_application">
+
+    <!--- Permission declaration -->
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+
+    <!--- End Permission declaration -->
+
+    <application
+        android:name="com.oybx.fyp_application.ApplicationManager"
+        android:windowSoftInputMode="adjustResize"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".MainActivity">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.oybx.firebase_cloud_messaging_section.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <activity android:name="com.oybx.fyp_application.AboutUs"/>
+        <activity android:name="com.oybx.fyp_application.LoginPage"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.oybx.fyp_application.RegisterPage"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.oybx.fyp_application.ConnectionError"/>
+        <activity android:name="com.oybx.fyp_application.student_section.StudentHomepage"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.oybx.fyp_application.student_section.StudentMessagepage"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.oybx.fyp_application.student_section.StudentRequestpage"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.oybx.fyp_application.student_section.StudentProfilepage"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.oybx.fyp_application.employer_section.EmployerHomepage"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.oybx.fyp_application.employer_section.EmployerMessagepage"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.oybx.fyp_application.employer_section.EmployerRequestpage"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.oybx.fyp_application.employer_section.EmployerProfilepage"
+            android:windowSoftInputMode="adjustResize"/>
+
+
+    </application>
+
+</manifest>

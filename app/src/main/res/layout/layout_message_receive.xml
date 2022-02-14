@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="10"
+    android:layout_marginTop="20dp">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+
+        <FrameLayout android:id="@+id/layout_message_received_headerContainer_profilePicContainer"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/layout_message_received_headerContainer_profilePic"
+                android:layout_width="37dp"
+                android:layout_height="37dp"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center"
+                android:scaleType="fitCenter"
+                android:src="@drawable/default_designer_profilepic" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignStart="@+id/newfeed_employer_post_layout_headerContainer_profilePicContainer"
+                android:src="@drawable/profile_circle_crop" />
+
+        </FrameLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="9">
+        <TextView
+            android:id="@+id/layout_message_received_message_received"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="100dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/chat_receive_bg"
+            android:fontFamily="@font/montserrat"
+            android:textSize="16dp"
+            android:padding="10dp"
+            android:textColor="@color/colorPrimary"
+
+            />
+        <TextView
+            android:id="@+id/layout_message_received_message_received_date_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_message_received_message_received"
+            android:text="2019-02-12 12:00:00"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="@font/textmeone"
+            android:textSize="10sp"
+            android:layout_marginLeft="25dp"
+            android:gravity="left"/>
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>
